@@ -54,6 +54,13 @@ ctrlQEP.obj: C:/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_motion/
 	@echo 'Finished building: $<'
 	@echo ' '
 
+datalog.obj: C:/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_motion/boards/drv8312kit_revD/f28x/f2806xM/projects/ccs/EV_28069M/sw/modules/datalog/src/32b/datalog.c $(GEN_OPTS) | $(GEN_HDRS)
+	@echo 'Building file: $<'
+	@echo 'Invoking: C2000 Compiler'
+	"C:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=softlib -O2 --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="C:/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_motion/boards/drv8312kit_revD/f28x/f2806xM/projects/ccs/EV_28069M" --define=QEP --define=FLASH --define=FAST_ROM_V1p6 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="datalog.d" $(GEN_OPTS__FLAG) "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
 drv8305.obj: C:/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_motion/boards/drv8312kit_revD/f28x/f2806xM/projects/ccs/EV_28069M/sw/drivers/drvic/drv8305/src/32b/f28x/f2806x/drv8305.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: $<'
 	@echo 'Invoking: C2000 Compiler'

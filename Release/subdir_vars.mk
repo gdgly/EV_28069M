@@ -23,6 +23,7 @@ C_SRCS += \
 ../sw/drivers/clk/src/32b/f28x/f2806x/clk.c \
 ../sw/drivers/cpu/src/32b/f28x/f2806x/cpu.c \
 ../sw/modules/ctrl/src/32b/ctrlQEP.c \
+../sw/modules/datalog/src/32b/datalog.c \
 ../sw/drivers/drvic/drv8305/src/32b/f28x/f2806x/drv8305.c \
 ../sw/modules/enc/src/32b/enc.c \
 ../sw/modules/filter/src/32b/filter_fo.c \
@@ -67,6 +68,7 @@ C_DEPS += \
 ./clk.d \
 ./cpu.d \
 ./ctrlQEP.d \
+./datalog.d \
 ./drv8305.d \
 ./enc.d \
 ./filter_fo.d \
@@ -112,6 +114,7 @@ OBJS += \
 ./clk.obj \
 ./cpu.obj \
 ./ctrlQEP.obj \
+./datalog.obj \
 ./drv8305.obj \
 ./enc.obj \
 ./filter_fo.obj \
@@ -162,6 +165,7 @@ OBJS__QUOTED += \
 "clk.obj" \
 "cpu.obj" \
 "ctrlQEP.obj" \
+"datalog.obj" \
 "drv8305.obj" \
 "enc.obj" \
 "filter_fo.obj" \
@@ -207,6 +211,7 @@ C_DEPS__QUOTED += \
 "clk.d" \
 "cpu.d" \
 "ctrlQEP.d" \
+"datalog.d" \
 "drv8305.d" \
 "enc.d" \
 "filter_fo.d" \
@@ -259,6 +264,7 @@ C_SRCS__QUOTED += \
 "../sw/drivers/clk/src/32b/f28x/f2806x/clk.c" \
 "../sw/drivers/cpu/src/32b/f28x/f2806x/cpu.c" \
 "../sw/modules/ctrl/src/32b/ctrlQEP.c" \
+"../sw/modules/datalog/src/32b/datalog.c" \
 "../sw/drivers/drvic/drv8305/src/32b/f28x/f2806x/drv8305.c" \
 "../sw/modules/enc/src/32b/enc.c" \
 "../sw/modules/filter/src/32b/filter_fo.c" \

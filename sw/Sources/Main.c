@@ -265,6 +265,9 @@ void main(void)
 	EEPROM_setup(gEepromHandle,  ((HAL_Obj *)ghalHandle)->gpioHandle, gi2cMessageHandle);
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
     // set DAC parameters
     gDacData.ptrData[0] = &gPwmData.Tabc.aiqvalue[0];
@@ -286,6 +289,7 @@ void main(void)
 	// Initialize Datalog
 	datalogHandle = DATALOG_init(&datalog,sizeof(datalog));
 
+	// Connect inputs of the datalog module; the datalog graph for SVGEN output
 	// Connect inputs of the datalog module
 	datalog.iptr[0] = &gPwmData.Tabc.aiqvalue[0];      // datalogBuff[0]
 	datalog.iptr[1] = &gPwmData.Tabc.aiqvalue[1];      // datalogBuff[1]
@@ -740,6 +744,10 @@ interrupt void adcInt1ISR(void)	// MainISR//$original:mainISR
 	// acknowledge the ADC interrupt
 	HAL_acqAdcInt(ghalHandle,ADC_IntNumber_1);
 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// for showing in the datalog
 
 	DATALOG_update(datalogHandle);
 

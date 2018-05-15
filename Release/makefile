@@ -17,6 +17,7 @@ ORDERED_OBJS += \
 "./clk.obj" \
 "./cpu.obj" \
 "./ctrlQEP.obj" \
+"./datalog.obj" \
 "./drv8305.obj" \
 "./enc.obj" \
 "./filter_fo.obj" \
@@ -197,8 +198,8 @@ EV_28069M.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "CodeStartBranch.obj" "Main.obj" "adc.obj" "clarke.obj" "clk.obj" "cpu.obj" "ctrlQEP.obj" "drv8305.obj" "enc.obj" "filter_fo.obj" "flash.obj" "gpio.obj" "hal.obj" "hallbldc.obj" "i2c.obj" "i2c_24lc32.obj" "i2c_lcd.obj" "i2c_mcp23017.obj" "i2c_message.obj" "ipark.obj" "memCopy.obj" "offset.obj" "osc.obj" "park.obj" "pid.obj" "pie.obj" "pll.obj" "pwm.obj" "pwr.obj" "qep.obj" "sci.obj" "sci_message.obj" "sci_modbus.obj" "sci_operator.obj" "slip.obj" "spi.obj" "svgen.obj" "throttle.obj" "timer.obj" "traj.obj" "usDelay.obj" "user.obj" "user_data.obj" "wdog.obj" 
-	-$(RM) "Main.d" "adc.d" "clarke.d" "clk.d" "cpu.d" "ctrlQEP.d" "drv8305.d" "enc.d" "filter_fo.d" "flash.d" "gpio.d" "hal.d" "hallbldc.d" "i2c.d" "i2c_24lc32.d" "i2c_lcd.d" "i2c_mcp23017.d" "i2c_message.d" "ipark.d" "memCopy.d" "offset.d" "osc.d" "park.d" "pid.d" "pie.d" "pll.d" "pwm.d" "pwr.d" "qep.d" "sci.d" "sci_message.d" "sci_modbus.d" "sci_operator.d" "slip.d" "spi.d" "svgen.d" "throttle.d" "timer.d" "traj.d" "user.d" "user_data.d" "wdog.d" 
+	-$(RM) "CodeStartBranch.obj" "Main.obj" "adc.obj" "clarke.obj" "clk.obj" "cpu.obj" "ctrlQEP.obj" "datalog.obj" "drv8305.obj" "enc.obj" "filter_fo.obj" "flash.obj" "gpio.obj" "hal.obj" "hallbldc.obj" "i2c.obj" "i2c_24lc32.obj" "i2c_lcd.obj" "i2c_mcp23017.obj" "i2c_message.obj" "ipark.obj" "memCopy.obj" "offset.obj" "osc.obj" "park.obj" "pid.obj" "pie.obj" "pll.obj" "pwm.obj" "pwr.obj" "qep.obj" "sci.obj" "sci_message.obj" "sci_modbus.obj" "sci_operator.obj" "slip.obj" "spi.obj" "svgen.obj" "throttle.obj" "timer.obj" "traj.obj" "usDelay.obj" "user.obj" "user_data.obj" "wdog.obj" 
+	-$(RM) "Main.d" "adc.d" "clarke.d" "clk.d" "cpu.d" "ctrlQEP.d" "datalog.d" "drv8305.d" "enc.d" "filter_fo.d" "flash.d" "gpio.d" "hal.d" "hallbldc.d" "i2c.d" "i2c_24lc32.d" "i2c_lcd.d" "i2c_mcp23017.d" "i2c_message.d" "ipark.d" "memCopy.d" "offset.d" "osc.d" "park.d" "pid.d" "pie.d" "pll.d" "pwm.d" "pwr.d" "qep.d" "sci.d" "sci_message.d" "sci_modbus.d" "sci_operator.d" "slip.d" "spi.d" "svgen.d" "throttle.d" "timer.d" "traj.d" "user.d" "user_data.d" "wdog.d" 
 	-$(RM) "CodeStartBranch.d" "usDelay.d" 
 	-@echo 'Finished clean'
 	-@echo ' '

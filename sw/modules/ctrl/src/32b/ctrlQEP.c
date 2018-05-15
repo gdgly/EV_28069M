@@ -46,7 +46,7 @@
 
 
 // modules
-//#include "sw/modules/dlog/src/32b/dlog4ch.h"
+#include "sw/modules/dlog/src/32b/dlog4ch.h"
 #include "sw/modules/math/src/32b/math.h"
 
 
